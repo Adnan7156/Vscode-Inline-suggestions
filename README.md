@@ -114,7 +114,3 @@ The default model is `openai/gpt-oss-120b`. If it is unavailable to your account
 For ghost text, the extension sends the file's basename and up to 12,000 characters before and 4,000 characters after the cursor to Groq. For a next edit, it sends the basename and up to 201 lines around the cursor, capped at approximately 18,000 characters. Requests go to `api.groq.com`. Review your organization's policies and Groq's terms before using the extension with confidential code.
 
 Generated code can be incorrect or insecure. Review suggestions before accepting or applying them. To remove your key, run **Groq Inline: Clear API Key**.
-
-## Publishing this repository
-
-Do not commit API keys, `.env` files, or other secrets. If you want users to install a prebuilt extension, attach the generated VSIX to a GitHub Release and update the download instructions to point to that release. The repository itself does not automatically create a release.
